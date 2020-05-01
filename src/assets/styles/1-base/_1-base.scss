@@ -1,4 +1,4 @@
-@import 'normalize';
-@import 'global';
-@import 'reset';
-@import 'typography';
+@forward 'normalize';
+@forward 'global';
+@forward 'reset';
+@forward 'typography';

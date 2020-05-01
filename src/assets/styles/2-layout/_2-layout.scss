@@ -1,4 +1,4 @@
-@import 'footer';
-@import 'header';
-@import 'hero01';
-@import 'section02';
+@forward 'footer';
+@forward 'header';
+@forward 'hero01';
+@forward 'section02';

@@ -1,0 +1,20 @@
+{
+  "name": "dev-world-main-site03",
+  "version": "1.0.0",
+  "description": "Dev-World main site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
+    "build": "parcel build public/index.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/runtime-corejs2": "^7.9.6",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.5"
+  }
+}

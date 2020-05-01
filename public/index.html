@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dev World</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon_1.png" />
+    <link rel="apple-touch-icon" href="./images/favicon_1.png" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <section>
+        <nav>
+          <div class="logo">
+            <a href="index"> <img alt="Logo" src="images/logo.png" /></a>
+            <p id="logo-desc">Dev World</p>
+          </div>
+          <ul class="nav-links">
+            <li><a class="nav-link" id="nav-link-focus">FOCUS</a></li>
+            <li><a class="nav-link" id="nav-link-about-me">ABOUT ME</a></li>
+            <li><a class="nav-link" id="nav-link-contact">CONTACT</a></li>
+          </ul>
+          <div class="burger-wrapper">
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <section class="hero01">
+        <div class="content-section1">
+          <h1 id="title01">DEV WORLD</h1>
+          <h2 id="title02">Code | Marketing | Design</h2>
+        </div>
+
+        <div class="scroll-arrow pulse01">
+          <i class="fa fa-angle-down fa-2x animated" id="scroll-arrow"></i>
+        </div>
+      </section>
+
+      <section id="mainProjects" class="section02">
+        <h2 id="title03" class="title03">Focus</h2>
+
+        <div class="imgcontentwrapper01">
+          <div class="description1">
+            <h3>Code</h3>
+            <p>
+              Shortly after my first line of JavaScript code I got addicted to
+              solving more and more difficult tasks with different programming
+              languages.
+            </p>
+          </div>
+
+          <div class="description1-img-wrapper appearanim01 imgglow01">
+            <a
+              ><img
+                class="description1-img"
+                alt="Code"
+                src="images/portfolio01.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="imgcontentwrapper01 wrapreverse01">
+          <div class="description1">
+            <h3>Marketing</h3>
+            <p>
+              I'm fascinated how people react to things, especially when it
+              comes to Online Marketing.
+            </p>
+          </div>
+          <div
+            id="productimg02"
+            class="description1-img-wrapper reverse02 appearanim01 imgglow01"
+          >
+            <a
+              ><img
+                class="description1-img"
+                alt="Marketing"
+                src="images/digital_marketing01 (1).png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="imgcontentwrapper01">
+          <div class="description1">
+            <h3>Design</h3>
+            <p>
+              As the son of a graphic designer I beleive that I inherited some
+              of the passion for design. I like simple and straightforward
+              designs that follows a goal.
+            </p>
+          </div>
+          <div
+            id="productimg03"
+            class="description1-img-wrapper appearanim01 imgglow01"
+          >
+            <a
+              ><img
+                class="description1-img"
+                alt="Design"
+                src="images/design01 (1).png"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutMe" class="section02">
+        <h2 id="title06" class="title03">About Me</h2>
+
+        <div class="cards01">
+          <div class="card01 appearanim01 reverse02 cardsglow01">
+            <i class="fas fa-route"></i>
+            <h3>My Travels</h3>
+            <p>
+              I grew up in Switzerland and live full time in Colombia since
+              2017.
+            </p>
+          </div>
+
+          <div class="card01 fadeinanim01 cardsglow01">
+            <i class="fas fa-briefcase"></i>
+            <h3>My Career</h3>
+            <p>
+              I graduated as a mechanic/engineer, worked as a "Product-Manager"
+              and currently have my own online business.
+            </p>
+          </div>
+
+          <div class="card01 appearanim01 cardsglow01">
+            <i class="fas fa-feather-alt"></i>
+            <h3>My Passion</h3>
+            <p>
+              I love to combine design and functionality with a long-term
+              approach on all my projects. Building new things with that in mind
+              is my passion.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section02" style="padding-bottom: 30px;">
+        <h2 id="title05" class="title03">Contact</h2>
+        <div class="imgcontentwrapper02">
+          <div class="description2-img-wrapper">
+            <img class="description2-img" alt="Logo" src="images/Samuel.jpg" />
+            <div class="description2">
+              <h3>Your Host</h3>
+              <p>
+                Sam Fromaway<br />
+                contact@dev-world.info<br />
+              </p>
+            </div>
+          </div>
+
+          <div class="wrap-contact cardsglow01">
+            <h2>Contact</h2>
+
+            <form id="myform" class="contact-form" netlify>
+              <div class="wrap-input">
+                <span class="label-input">Name *</span>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="wrap-input">
+                <span class="label-input">Email *</span>
+                <input
+                  class="input"
+                  type="text"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="wrap-input">
+                <span class="label-input">Message *</span>
+                <textarea
+                  class="input"
+                  name="message"
+                  placeholder="Your message here..."
+                ></textarea>
+              </div>
+
+              <button class="button contact-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Scripts -->
+    <script src="../src/assets/scripts/index.js"></script>
+  </body>
+</html>

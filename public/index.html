@@ -262,31 +262,27 @@
 
             <form id="myform" class="contact-form" netlify>
               <div class="wrap-input">
-                <span class="label-input">Name *</span>
-                <input
-                  class="input"
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                />
+                <input class="input" type="text" name="name" required />
+                <label for="name" class="label">
+                  <span class="label-input">Name*</span>
+                </label>
               </div>
 
               <div class="wrap-input">
-                <span class="label-input">Email *</span>
-                <input
-                  class="input"
-                  type="text"
-                  name="email"
-                  placeholder="Enter your email"
-                />
+                <input class="input" type="text" name="email" required />
+                <label for="email" class="label">
+                  <span class="label-input">Email*</span>
+                </label>
               </div>
 
               <div class="wrap-input">
-                <span class="label-input">Message *</span>
+                <label for="message" class="label-textfield">
+                  <span class="label-input-textfield">Message*</span>
+                </label>
                 <textarea
-                  class="input"
+                  class="input-textfield"
                   name="message"
-                  placeholder="Your message here..."
+                  required
                 ></textarea>
               </div>
 

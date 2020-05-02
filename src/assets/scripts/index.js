@@ -71,6 +71,13 @@ document.querySelectorAll('.fadeinanim01').forEach((fade01) => {
 //----Menu Scroll----//
 const scrollBehavior02 = 'smooth';
 
+document.getElementById('cta-button').onclick = function scrollAboutMe() {
+  document
+    .getElementById('title05')
+    .scrollIntoView({ behavior: scrollBehavior02 });
+  scrollBehaviorMenu();
+};
+
 document.getElementById(
   'nav-link-about-me'
 ).onclick = function scrollAboutMe() {

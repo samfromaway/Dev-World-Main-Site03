@@ -58,28 +58,28 @@ document.getElementById(
   'nav-link-about-me'
 ).onclick = function scrollAboutMe() {
   document
-    .getElementById('title06')
+    .getElementById('anchor-about-me')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };
 
 document.getElementById('nav-link-focus').onclick = function scrollWork() {
   document
-    .getElementById('title03')
+    .getElementById('anchor-focus')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };
 
 document.getElementById('nav-link-videos').onclick = function scrollWork() {
   document
-    .getElementById('title07')
+    .getElementById('anchor-videos')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };
 
 document.getElementById('nav-link-contact').onclick = function scrollContact() {
   document
-    .getElementById('title05')
+    .getElementById('anchor-contact')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };

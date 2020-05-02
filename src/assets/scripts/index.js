@@ -1,5 +1,3 @@
-import '../styles/main.scss';
-
 //----Menu----//
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
@@ -85,6 +83,13 @@ document.getElementById(
 document.getElementById('nav-link-focus').onclick = function scrollWork() {
   document
     .getElementById('title03')
+    .scrollIntoView({ behavior: scrollBehavior02 });
+  scrollBehaviorMenu();
+};
+
+document.getElementById('nav-link-videos').onclick = function scrollWork() {
+  document
+    .getElementById('title07')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };

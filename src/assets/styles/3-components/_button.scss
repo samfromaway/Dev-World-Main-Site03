@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   width: 120px;
   text-align: center;
   border-radius: 20px;
@@ -32,4 +33,9 @@
 
 .contact-btn {
   margin: 0;
+}
+
+.btn-big {
+  width: 150px;
+  padding: 1rem;
 }

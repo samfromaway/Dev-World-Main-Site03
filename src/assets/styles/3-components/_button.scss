@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.button:active {
+  background-color: rgb(110, 139, 231);
+}
+
 /* special contact form button style */
 
 .btn-small {

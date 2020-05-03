@@ -93,6 +93,6 @@ function scrollBehaviorMenu() {
 
 document.getElementById('scroll-arrow').onclick = function scrollNext01() {
   document
-    .getElementById('title03')
+    .getElementById('anchor-focus')
     .scrollIntoView({ behavior: scrollBehavior02 });
 };

@@ -96,3 +96,34 @@ document.getElementById('scroll-arrow').onclick = function scrollNext01() {
     .getElementById('anchor-focus')
     .scrollIntoView({ behavior: scrollBehavior02 });
 };
+
+//----Slick Carousel----//
+
+$(document).ready(function () {
+  $('.videos01').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    nextArrow: $('.next2'),
+    prevArrow: $('.prev2'),
+
+    responsive: [
+      {
+        breakpoint: 999,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

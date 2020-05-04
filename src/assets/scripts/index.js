@@ -49,7 +49,7 @@ const scrollBehavior02 = 'smooth';
 
 document.getElementById('cta-button').onclick = function scrollAboutMe() {
   document
-    .getElementById('title05')
+    .getElementById('anchor-contact')
     .scrollIntoView({ behavior: scrollBehavior02 });
   scrollBehaviorMenu();
 };

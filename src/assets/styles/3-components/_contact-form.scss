@@ -1,5 +1,7 @@
 .wrap-contact {
+  background-color: var(--space-blue);
   width: 400px;
+  filter: var(--drop-shadow01);
   border-radius: var(--main-border-radius);
   padding: 1.2rem;
   margin: 1.5rem;
@@ -16,8 +18,7 @@
   width: 100%;
   position: relative;
   margin-bottom: 15px;
-  padding-top: 40px;
-
+  padding-top: 25px;
   text-align: left;
   overflow: hidden;
 }
@@ -26,23 +27,22 @@
 .input-textfield {
   width: 100%;
   height: 100%;
-  padding-bottom: 8px;
+  padding: 10px;
   color: rgb(255, 255, 255);
   border: none;
-  background-color: transparent;
+  background-color: rgba(192, 192, 192, 0.315);
+  border-radius: 0 var(--main-border-radius) 0 0;
   outline: none;
   padding-left: 8px;
 }
 
 .input-textfield {
-  border: 1px solid white;
   min-height: 162px;
   max-height: 500px;
   max-width: 100%;
   min-width: 100%;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  margin-top: 8px;
+  padding: 10px;
+  margin-top: 5px;
   border-radius: var(--main-border-radius);
 }
 
@@ -53,11 +53,6 @@
   width: 100%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid white;
-}
-
-.label-input-textfield {
-  color: white;
 }
 
 .label::after {
@@ -74,10 +69,10 @@
 
 .label-input {
   position: absolute;
-  bottom: 5px;
+  bottom: 4px;
   font-size: 1rem;
-  color: white;
-  left: 0;
+  color: rgb(182, 182, 182);
+  left: 8px;
   transition: all 0.3s ease;
 }
 
@@ -96,7 +91,7 @@ select:-webkit-autofill:focus {
 
 .input:focus + .label .label-input,
 .input:valid + .label .label-input {
-  transform: translateY(-90%);
+  transform: translateY(-142%);
 }
 
 .input:focus + .label::after,
@@ -104,7 +99,23 @@ select:-webkit-autofill:focus {
   transform: translateX(0%);
 }
 
+.label-textfield-input {
+  position: absolute;
+  top: 35px;
+  font-size: 1rem;
+  color: rgb(182, 182, 182);
+  left: 8px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
 .input-textfield:focus {
   border: 3px solid rgb(80, 82, 209);
-  transition: border 0.3s ease;
+  padding: 7px;
+  transition: all 0.3s ease;
+}
+
+.input-textfield:focus + .label-textfield .label-textfield-input,
+.input-textfield:valid + .label-textfield .label-textfield-input {
+  transform: translateY(-165%);
 }

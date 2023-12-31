@@ -10,11 +10,13 @@
   "scripts": {
     "dev": "npm run clean && parcel public/index.html --out-dir development -p 3000",
     "build": "parcel build public/index.html --out-dir dist --public-url ./",
-    "clean": "rimraf ./development && rimraf -rf ./.cache"
+    "clean": "rimraf ./development && rimraf -rf ./.cache",
+    "start": "node server.js"
   },
   "author": "Sam Roellin",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "@babel/core": "^7.9.6",
     "gulp-imagemin": "^7.1.0",

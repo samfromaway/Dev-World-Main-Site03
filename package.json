@@ -16,16 +16,19 @@
   "author": "Sam Roellin",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.17.1",
-    "gulp": "^4.0.2",
     "@babel/core": "^7.9.6",
-    "gulp-imagemin": "^7.1.0",
     "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/runtime-corejs2": "^7.9.6",
+    "express": "^4.18.2",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.5"
   },
   "dependencies": {
-    "parcel-plugin-static-files-copy": "^2.3.1"
+    "@netlify/functions": "^2.4.1",
+    "@types/express": "^4.17.21",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "serverless-http": "^3.2.0"
   }
 }
